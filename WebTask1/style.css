@@ -440,3 +440,93 @@ label {
     padding: 15px !important;
   }
 }
+@media (max-width: 768px) {
+  #welcome-board {
+    height: auto;
+  }
+
+  #welcome-board img {
+    height: 60vh;
+    object-fit: cover;
+  }
+
+  #welcome-text {
+    width: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    text-align: center;
+  }
+
+  #welcome-text h1 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  #welcome-text p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #welcome-text button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #gallery table,
+  #gallery tbody,
+  #gallery tr,
+  #gallery td {
+    display: block;
+    width: 100%;
+  }
+
+  #gallery tr {
+    margin-bottom: 20px;
+  }
+
+  #gallery td {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  #gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    position: relative;
+    padding: 20px;
+  }
+
+  .nav-bar p:first-child {
+    position: static;
+    margin-bottom: 15px;
+    left: auto;
+  }
+
+  .nav-bar a {
+    display: block;
+    margin: 8px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-bar a:last-child {
+    position: static;
+    right: auto;
+    margin-top: 15px;
+    padding: 10px 40px;
+    display: inline-block;
+    width: auto;
+  }
+}
