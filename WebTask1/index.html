@@ -24,7 +24,7 @@
         <a href="#">Home</a>
         <a href="#gallery">Gallery</a>
         <a href="#about-us">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="#main-footer">Contact</a>
         <a
           id="authenticate"
           href="authenticate.html"
@@ -140,17 +140,81 @@
     </div>
     </section>
     <footer id="main-footer">
-    <div class="footer-content">
-        <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    
+    <div class="footer-auth-row">
+        
+        <form action="submit" class="footer-form auth-form-box">
+            <fieldset>
+                <legend>Login</legend>
+                <label for="login-user">Username:</label>
+                <input type="text" id="login-user" name="username" required>
+                
+                <label for="login-pass">Password:</label>
+                <input type="password" id="login-pass" name="password" required>
+                
+                <a href="#" class="forgot-pass">Forgot Password?</a>
+                <button type="submit">Login</button>
+            </fieldset>
+        </form>
+
+        <form action="submit" class="footer-form auth-form-box">
+            <fieldset>
+                <legend>Signup</legend>
+                <label for="sign-user">Username:</label>
+                <input type="text" id="sign-user" name="username" required>
+                
+                <label for="sign-pass">Password:</label>
+                <input type="password" id="sign-pass" name="password" required>
+                
+                <button type="submit">Signup</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 40px 0;">
+
+    <div class="footer-bottom-row">
+        
+        <div class="footer-left">
+            <form action="submit" class="footer-form feedback-box">
+                <fieldset>
+                    <legend>Feedback Form</legend>
+                    <label for="fb-name">Name:</label>
+                    <input type="text" id="fb-name" name="name" placeholder="John" required>
+                    
+                    <label for="fb-email">Email:</label>
+                    <input type="email" id="fb-email" name="email" placeholder="john@gmail.com" required>
+                    
+                    <label for="fb-text">Feedback:</label>
+                    <textarea id="fb-text" name="feedback" rows="3"></textarea>
+                    
+                    <div class="btn-group">
+                        <button type="submit">Submit</button>
+                        <button type="reset" class="reset-btn">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
 
-        <a href="mailto:thefourthgate@gmail.com" class="footer-email">thefourthgate@gmail.com</a>
-        <p class="copyright">
-            &copy; 2026 The Fourth Wall. All rights reserved.
-        </p>
+        <div class="footer-right">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <a href="mailto:thefourthgate@gmail.com" class="footer-email">thefourthgate@gmail.com</a>
+            
+            <p class="address">
+                FAST NUCES, AK Brohi Road,H-11/4<br>
+                Islamabad, Pakistan
+            </p>
+
+            <p class="copyright">
+                &copy; 2026 The Fourth Wall.<br>All rights reserved.
+            </p>
+        </div>
     </div>
 </footer>
   </body>

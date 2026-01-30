@@ -289,6 +289,132 @@
   font-size: 0.85rem;
   margin: 0;
 }
+.footer-auth-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.auth-form-box {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-right {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+}
+
+fieldset {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0;
+}
+
+legend {
+  padding: 0 10px;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 0.85rem;
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: inherit;
+}
+
+.footer-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #8c9c8a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.footer-form button:hover {
+  background-color: #fff;
+  color: #3e4a3d;
+}
+
+.reset-btn {
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+}
+
+.forgot-pass {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+.footer-right h3 {
+  margin-top: 0;
+  color: Black;
+  border-bottom: 2px solid #8c9c8a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.address {
+  margin-top: 20px;
+  line-height: 1.6;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-right {
+    text-align: center;
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 768px) {
   body {
